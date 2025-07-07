@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts and Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/hero-headshot.webp">
+  <title>Badhri S | Portfolio</title>
+  <meta name="description" content="Portfolio of Badhri S - Software Developer specializing in C++, Web, and React.js.">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator"></div>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Badhri S</a>
+    </div>
+    <div class="right">
+      <button id="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span>Github</span></a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a>
+      <a href="mailto:badhrisrinivasan2503@gmail.com"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="text">
+        <div class="typewriter">
+          <h2>Hi, I'm Badhri 👋</h2>
+        </div>
+        <p>Seeking a software development role where I can apply my skills in C++ and web development to contribute to innovative technical solutions.</p>
+        <div class="links">
+          <a href="#skills"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+          <a href="#projects"><i class="fa-solid fa-pen"></i><span>Projects</span></a>
+          <a href="#contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a>
+        </div>
+      </div>
+      <div class="headshot">
+        <img src="images/hero-headshot.webp" alt="Badhri S headshot">
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        <p>I have strong technical skills in web development and programming. Below are the technologies and tools I specialize in:</p>
+      </div>
+      <div class="cells">
+        <div class="cell"><img src="images/html-logo.webp" alt="html logo"><span>HTML</span></div>
+        <div class="cell"><img src="images/css-logo.webp" alt="css logo"><span>CSS</span></div>
+        <div class="cell"><img src="images/javascript-logo.webp" alt="javascript logo"><span>JavaScript</span></div>
+        <div class="cell"><img src="images/react-logo.webp" alt="react logo"><span>React.js</span></div>
+        <div class="cell"><img src="images/c++-logo.jpeg" alt="c++ logo"><span>C++</span></div>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-bar"><div class="progress" data-width="90%"></div><span>HTML</span></div>
+        <div class="skill-bar"><div class="progress" data-width="85%"></div><span>CSS</span></div>
+        <div class="skill-bar"><div class="progress" data-width="80%"></div><span>JavaScript</span></div>
+        <div class="skill-bar"><div class="progress" data-width="75%"></div><span>React.js</span></div>
+        <div class="skill-bar"><div class="progress" data-width="70%"></div><span>C++</span></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>YouTube Clone Website</h3>
+              <p>Replicates YouTube’s interface with a focus on responsive design.</p>
+            </div>
+            <div class="card-back">
+              <h3>Tech Used</h3>
+              <p>HTML, CSS</p>
+              <a href="#" target="_blank" class="project-link">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>Blackhole Attack Detection</h3>
+              <p>Simulation-based approach using NS2 to detect blackhole attacks in wireless sensor networks.</p>
+            </div>
+            <div class="card-back">
+              <h3>Tech Used</h3>
+              <p>NS2, Networking</p>
+              <a href="#" target="_blank" class="project-link">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="load-more">Load More</button>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <div class="group">
+        <div class="text">
+          <p>Feel free to reach out via this form or through my social links. I will get back to you as soon as possible!</p>
+        </div>
+        <form id="contact-form">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Particle.js Background -->
+  <div id="particles-js"></div>
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <script src="script.js"></script>
+</body>
+</html>
